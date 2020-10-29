@@ -34,8 +34,6 @@ const Repos = () => {
     })
     .slice(0, 5);
 
-  console.log(mostPopular);
-
   const { stars, forks } = githubRepos.reduce(
     (total, item) => {
       const { stargazers_count, name, forks } = item;
@@ -51,8 +49,6 @@ const Repos = () => {
 
   const starsArr = Object.values(stars).slice(-5).reverse();
   const forksArr = Object.values(forks).slice(-5).reverse();
-
-  console.log(starsArr);
 
   const chartData = [
     {
@@ -75,8 +71,8 @@ const Repos = () => {
         {/* <ExampleChart data={chartData} /> */}
         <Pie3D data={mostUsed} />
         <Doughnut2D data={mostPopular} />
-        <Column3D data={starsArr} />
         <Bar3D data={forksArr} />
+        <Column3D data={starsArr} />
       </Wrapper>
     </section>
   );

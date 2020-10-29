@@ -31,9 +31,9 @@ const Column3D = ({ data }) => {
         //Set the chart subcaption
         // subCaption: "In MMbbl = One Million barrels",
         //Set the x-axis name
-        xAxisName: "Repos",
+        xAxisName: "Repository Name",
         //Set the y-axis name
-        yAxisName: "Stars",
+        yAxisName: "Stars Count",
         // numberSuffix: "K",
         //Set the theme for your chart
         theme: "candy",
